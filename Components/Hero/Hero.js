@@ -2,8 +2,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import TwitterIcon from "@material-ui/icons/Twitter";
 
 import { GlobeAltIcon } from "@heroicons/react/solid";
-import Image from "next/image";
-import { Link } from "@material-ui/core";
+
 const Hero = ({
   img,
   name,
