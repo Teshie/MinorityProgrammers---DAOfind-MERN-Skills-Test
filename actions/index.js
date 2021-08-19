@@ -5,41 +5,41 @@ export const all = () => {
 };
 export const protocol = () => {
   return {
-    type: "PROTOCOL",
+    type: "Protocols",
   };
 };
 export const service = () => {
   return {
-    type: "SERVICE",
+    type: "Services",
   };
 };
 export const grant = () => {
   return {
-    type: "GRANT",
+    type: "Grants",
   };
 };
 export const media = () => {
   return {
-    type: "MEDIA",
+    type: "Medias",
   };
 };
 export const social = () => {
   return {
-    type: "SOCIAL",
+    type: "Socials",
   };
 };
 export const investment = () => {
   return {
-    type: "INVESTMENT",
+    type: "Investments",
   };
 };
 export const platform = () => {
   return {
-    type: "PLATFORM",
+    type: "Platforms",
   };
 };
 export const collector = () => {
   return {
-    type: "COLLECTOR",
+    type: "Collectors",
   };
 };

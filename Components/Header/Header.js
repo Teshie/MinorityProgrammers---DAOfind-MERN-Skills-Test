@@ -3,7 +3,6 @@ import { HomeIcon, AddIcon, LearnIcon } from "@heroicons/react/solid";
 import { doaList } from "../Constants/Constants";
 import { useState } from "react";
 const Header = () => {
-  const [dao, setDao] = useState([]);
   const addDoa = (e) => {
     e.preventDefault();
     const newDao = [
@@ -19,9 +18,11 @@ const Header = () => {
         "Twitter handle": "Uniswap",
       },
     ];
-    const newDaoList = [...doaList, newDao];
-    setDao(newDaoList);
-    doaList.push(newDaoList);
+    const addDoa = () => {
+      const newDaoList = [...doaList, newDao];
+      setDao(newDaoList);
+      doaList.push(newDaoList);
+    };
     console.log(doaList);
   };
   return (
@@ -39,7 +40,10 @@ const Header = () => {
         <p className="text-purple-500 my-3  hover:shadow-xl bg-white px-10 font-bold py-4 shadow-md rounded-full active:scale-90 transition duration-150 cursor-pointer">
           Home
         </p>
-        <p className="text-purple-500 my-3 hover:shadow-xl bg-white px-10 font-bold py-4 shadow-md rounded-full active:scale-90 transition duration-150 cursor-pointer">
+        <p
+          onClick={addDoa}
+          className="text-purple-500 my-3 hover:shadow-xl bg-white px-10 font-bold py-4 shadow-md rounded-full active:scale-90 transition duration-150 cursor-pointer"
+        >
           Add
         </p>
         <p className="text-purple-500 my-3 hover:shadow-xl bg-white px-10 font-bold py-4 shadow-md rounded-full active:scale-90 transition duration-150 cursor-pointer">

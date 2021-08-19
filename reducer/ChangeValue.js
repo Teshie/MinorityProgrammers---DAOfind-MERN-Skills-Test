@@ -50,28 +50,28 @@ const changeValueReducer = (state = 0, action) => {
     case "ALL":
       return total;
       break;
-    case "PROTOCOL":
+    case "Protocols":
       return Protocol();
       break;
-    case "SERVICE":
+    case "Services":
       return Service();
       break;
-    case "GRANT":
+    case "Grants":
       return Grant();
       break;
-    case "MEDIA":
+    case "Medias":
       return Media();
       break;
-    case "SOCIAL":
+    case "Socials":
       return Social();
       break;
-    case "INVESTMENT":
+    case "Investments":
       return Investment();
       break;
-    case "PLATFORM":
+    case "Platforms":
       return Platform();
       break;
-    case "COLLECTOR":
+    case "Collectors":
       return Collector();
       break;
     default:

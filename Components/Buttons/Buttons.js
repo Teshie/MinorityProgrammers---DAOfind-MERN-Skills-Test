@@ -31,7 +31,6 @@ const Buttons = ({
 
   return (
     <div className="flex  justify-evenly lg:max-w-3xl cursor-pointer md:mx-[370px] mt-10 px-4     space-x-2">
-      <p>{value}</p>
       <h2
         onClick={() => dispatch(all())}
         id="btn"
