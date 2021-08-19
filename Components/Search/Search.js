@@ -8,7 +8,6 @@ const Search = () => {
          text-white
          rounded-full p-2 
          md:mx-2
-        
          "
       />
       <input
