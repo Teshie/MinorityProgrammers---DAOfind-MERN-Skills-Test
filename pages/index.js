@@ -3,8 +3,10 @@ import Header from "../Components/Header/Header";
 import Hero from "../Components/Hero/Hero";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import Dashboard from "../Components/Dashboard/Dashboard";
-import { doaList } from "../Components/Constants/Constants";
+import { doaList, buttons } from "../Components/Constants/Constants";
+import Titles from "../Components/Titles/Titles";
 import Buttons from "../Components/Buttons/Buttons";
+import Search from "../Components/Search/Search";
 export default function Home() {
   return (
     <div>
@@ -17,8 +19,38 @@ export default function Home() {
       </Head>
       <Header />
       <Dashboard />
-      <Buttons />
+
       <main>
+        <div className="">
+          {buttons?.map(
+            ({
+              All,
+              Protocol,
+              Service,
+              Grant,
+              Media,
+              Social,
+              Investment,
+              Platform,
+              Collector,
+            }) => (
+              <Buttons
+                key={Protocol}
+                All={All}
+                Protocol={Protocol}
+                Service={Service}
+                Grant={Grant}
+                Media={Media}
+                Social={Social}
+                Investment={Investment}
+                Platform={Platform}
+                Collector={Collector}
+              />
+            )
+          )}
+        </div>
+        <Search />
+        <Titles />
         <div className="">
           {doaList?.map(
             ({
